@@ -492,4 +492,20 @@ function LoadingState({ count }: { count: number }) {
       ))}
     </div>
   );
-}
+}<div>
+  <label className="flex cursor-pointer items-center gap-3 p-3 rounded-xl border border-zinc-200 bg-white transition hover:border-violet-300 hover:bg-violet-50/30">
+    <input
+      type="checkbox"
+      checked={config.gunakanVisual}
+      onChange={e => setConfig({...config, gunakanVisual: e.target.checked})}
+      className="h-5 w-5 rounded border-zinc-300 text-violet-600 focus:ring-violet-500 cursor-pointer"
+    />
+    <div>
+      <div className="flex items-center gap-1.5 text-[13px] font-medium text-zinc-900">
+        <ImageIcon className="h-4 w-4 text-violet-600" />
+        Sertakan Gambar
+      </div>
+      <p className="text-[11px] text-zinc-500 mt-0.5">AI akan generate ilustrasi relevan</p>
+    </div>
+  </label>
+</div>
