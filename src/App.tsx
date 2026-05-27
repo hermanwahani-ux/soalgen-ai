@@ -219,7 +219,7 @@ export default function App() {
                 <input
                   type="range"
                   min={1}
-                  max={20}
+                  max={50}
                   value={count}
                   onChange={(e) => setCount(Number(e.target.value))}
                   className="w-full accent-indigo-600"
